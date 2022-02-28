@@ -3,7 +3,7 @@
   <div class="border-2">
     <h4 class="p-4 bg-gray-100 text-left">Add a new product</h4>
     <p class="text-red-500 mt-2" v-if="empty">Iltimos inputlarni to'ldiring!</p>
-    <form class="py-5 flex flex-row justify-around items-end" @submit.prevent="postProducts">
+    <form class="py-5 flex flex-row justify-evenly items-end" @submit.prevent="postProducts">
       <div>
         <label for="product-id" class="mr-2">Id</label>
         <input name="id" type="number" class="border-2 outline-none" v-model="id" required>
